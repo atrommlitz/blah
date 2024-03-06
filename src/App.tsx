@@ -8,6 +8,7 @@ function Welcome() {
   return <h1>NCAA Basketball Tournament Teams</h1>;
 }
 
+//this allows me to specify the variables in the team object and the properties in it
 interface Team {
   tid: number;
   school: string;
@@ -15,7 +16,7 @@ interface Team {
   city: string;
   state: string;
 }
-
+//this allows me to specify the variables in the teamCard object and the properties in it
 interface TeamCardProps {
   school: string;
   name: string;
@@ -23,6 +24,7 @@ interface TeamCardProps {
   state: string;
 }
 
+//function recieveing information from the JSON data and putting it into H2 tags and p tags
 function TeamCard({ school, name, city, state }: TeamCardProps) {
   return (
     <div className="team-card">
@@ -34,13 +36,12 @@ function TeamCard({ school, name, city, state }: TeamCardProps) {
     </div>
   );
 }
-
+//Puting teams in a list and dispalying the list of teams from the json data
 function TeamList() {
   const teams: Team[] = CollegeBasketballTeams.teams;
 
   return (
     <div>
-      <h1>List of Teams</h1>
       <div className="team-list">
         {teams.map((team) => (
           <TeamCard
@@ -56,6 +57,7 @@ function TeamList() {
   );
 }
 
+//Funciton that displays the app
 function App() {
   return (
     <div className="App">
