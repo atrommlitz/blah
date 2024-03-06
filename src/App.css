@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+/* Give CSS to make the cards on the app website  */
+.team-card {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 16px;
+  display: inline-block; /* Added to make the card wrap around its content */
+}
+
+.school-name {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.mascot-name {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.location {
+  font-size: 14px;
+  color: #666;
+}
